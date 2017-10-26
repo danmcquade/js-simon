@@ -5,21 +5,21 @@ body {
   align-items: center;
   margin: 0;
   padding: 0;
+  min-height: 100vh;
 }
 .btn {
  margin: 10px;
  padding: 5px 25px;
- background: #CCCCCC;
+ background: #919192;
  border: none;
  font-size: 18px;
  text-transform: uppercase;
  text-decoration: none;
- color: #5D5D5D;
+ color: #FFFFFF;
 }
 a.btn:active {
   color: #000000;
 }
-
 .bannerwrapper {
   width: 100%;
   height: 75px;
@@ -29,8 +29,8 @@ a.btn:active {
   justify-content: center;
   align-items: center;
   font-style: italic;
+  box-shadow: 0px 0px 5px 3px rgba(0,0,0,.8)
 }
-
 .banner {
   display: flex;
   width: 225px;
@@ -39,7 +39,6 @@ a.btn:active {
   width: 250px;
   align-items: center;
 }
-
 .headericon {
   width: 50px;
   height: 50px;
@@ -47,20 +46,17 @@ a.btn:active {
   background-size: contain;
   margin-right: 15px;
 }
-
 .leaderboard {
   width: 100px;
 }
-
 .controls {
   margin: 20px;
+  display: flex;
 }
-
 .score {
   font-size: 40px;
   margin: 0 25px;
 }
-
 .red {
   width:300px;
   height: 300px;
@@ -108,4 +104,22 @@ a.btn:active {
 .bottom {
   display: flex;
   flex-direction: row;
+  margin-bottom: 20px;
+}
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 100%;
+  background: #171717;
+  margin-top: auto;
+  color: #FFFFFF;
+  box-shadow: 0px 0px 2px 1px rgba(0,0,0,.8);
+  font-size: 20px;
+}
+
+.footer a {
+  color: #FFFFFF;
+  text-decoration: none;
 }
