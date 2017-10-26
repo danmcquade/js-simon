@@ -51,7 +51,7 @@ function resetGame () {
 function playMove (button) {
   button.classList.add('press')
   new Audio(button.dataset.sound).play()
-  setTimeout(function () {
+  setTimeout(() => {
     button.classList.remove('press')
   }, 300)
 }
@@ -80,7 +80,7 @@ function animateSolution () {
 function flashButtons () {
   theButtons.forEach((button) => {
     button.classList.add('press')
-    setTimeout(function () {
+    setTimeout(() => {
       button.classList.remove('press')
     }, 300)
   })
