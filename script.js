@@ -35,6 +35,7 @@ resetButton.addEventListener('click', () => {
 })
 
 function resetGame () {
+  banner.innerHTML = 'JS-Simon'
   gameOver = true
   solution = []
   mySolution = []
@@ -102,7 +103,7 @@ function checkSolution () {
         new Audio('sounds/fail.mp3').play()
       }, 700)
       setTimeout(introAnimation, 500)
-      resetGame()
+      setTimeout(resetGame, 3000)
     }
   }
   if (mySolution.length >= solution.length && failed !== true) {
