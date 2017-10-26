@@ -122,4 +122,6 @@ a.btn:active {
 .footer a {
   color: #FFFFFF;
   text-decoration: none;
+  font-family: 'HelveticaNeue-UltraLight', 'Helvetica', 'Arial', sans-serif;
+  letter-spacing: 1px;
 }
