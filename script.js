@@ -3,8 +3,8 @@ const green = document.querySelector('.green')
 const blue = document.querySelector('.blue')
 const yellow = document.querySelector('.yellow')
 const theButtons = [red, green, blue, yellow]
-const startButton = document.querySelector('.startgame')
-const resetButton = document.querySelector('.resetgame')
+const startButton = document.getElementById('startgame')
+const resetButton = document.getElementById('resetgame')
 const banner = document.getElementsByTagName('h1')[0]
 const score = document.querySelector('.score')
 let solution = []
@@ -25,13 +25,17 @@ document.querySelector('.buttons').addEventListener('click', (x) => {
 })
 
 startButton.addEventListener('click', (x) => {
-  resetGame()
-  gameOver = false
-  generateSolution()
+  if (gameOver) {
+    resetGame()
+    gameOver = false
+    generateSolution()
+  }
 })
 
 resetButton.addEventListener('click', () => {
-  resetGame()
+  if (!solutionPlaying) {
+    resetGame()
+  }
 })
 
 function resetGame () {

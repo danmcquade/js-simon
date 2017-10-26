@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>JS-Simon by Dan McQuade</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
     <script src="script.js" defer></script>
   </head>
@@ -15,9 +16,12 @@
       </div>
     </div>
     <div class="controls">
-      <input type="button" class="startgame" value="Start"></input>
+      <a class="btn" id="startgame" href="#"><i class="fa fa-play-circle-o" aria-hidden="true"></i> Start</a>
+      <!-- <input type="button" class="startgame" value="Start"><i class="fa fa-play-circle-o" aria-hidden="true"></i> -->
+</input>
       <span class="score">00</span>
-      <input type="button" class="resetgame" value="Reset"></input>
+      <a class="btn" id="resetgame" href="#"><i class="fa fa-refresh" aria-hidden="true"></i> Reset</a>
+      <!-- <input type="button" class="resetgame" value="Reset"></input> -->
     </div>
     <div class="buttons">
       <div class="top">
