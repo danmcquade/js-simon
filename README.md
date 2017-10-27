@@ -1,7 +1,7 @@
 # JS-Simon
 A web-based version of the classic game Simon in HTML/CSS/JS
 
-[Preview](https://raw.githubusercontent.com/danmcquade/js-simon/master/images/preview.png "JS-Simon Game Preview")
+![JS-Simon Game Screenshot](https://raw.githubusercontent.com/danmcquade/js-simon/master/images/preview.png "JS-Simon Game Screenshot")
 
 ## Technologies used
 JS-Simon is created using HTML, CSS and vanilla JavaScript. The game utilizes a cloud-based database hosted on Google's Firebase platform to store high scores. Project assets consist of PNG images to draw the game board, and MP3 files for the game sounds.
