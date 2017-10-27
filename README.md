@@ -1,5 +1,7 @@
 # JS-Simon
-A web-based version of the classic game Simon in HTML/CSS/JS
+A web-based version of the classic game Simon in HTML/CSS/JS. Playable version at:
+
+[https://danmcquade.github.io/js-simon/](https://danmcquade.github.io/js-simon/])
 
 ![JS-Simon Game Screenshot](https://danmcquade.github.io/js-simon/images/preview.png "JS-Simon Game Screenshot")
 
