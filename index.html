@@ -6,7 +6,6 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
-  <script src="script.js" defer></script>
 </head>
 <body>
   <div class="bannerwrapper">
@@ -21,6 +20,12 @@
       <span class="score">00</span>
       <a class="btn" id="resetgame" href="#"><i class="fa fa-refresh" aria-hidden="true"></i> Reset</a>
     </div>
+    <div class="leaderboard">
+      <h3>Current High Score</h3>
+      <div class="highscore">
+        <span><strong>Name:</strong></span><span class="highscorename"></span><span><strong>Score:</strong></span><span class="highscorenum"></span>
+      </div>
+    </div>
     <div class="buttons">
       <div class="top">
         <div class="button red" data-color="red" data-id="1" data-sound="sounds/red.mp3"></div>
@@ -34,5 +39,8 @@
     </div>
   </div>
   <div class="footer"><a href="https://github.com/danmcquade/js-simon" target="_blank"><i class="fa fa-github" aria-hidden="true"></i>&nbsp;Dan McQuade on GitHub</a></div>
+  <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
+  <script src="leaderboard.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>

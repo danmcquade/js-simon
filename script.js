@@ -14,6 +14,7 @@ let gameOver = true
 let solutionPlaying = false
 let timeout = 650
 
+// Listen for 'click' evnents on our game buttons
 document.querySelector('.buttons').addEventListener('click', (e) => {
   if (!solutionPlaying) {
     playMove(e.target)
@@ -24,6 +25,7 @@ document.querySelector('.buttons').addEventListener('click', (e) => {
   }
 })
 
+// Listen for 'click' evnents on our 'start' button
 startButton.addEventListener('click', () => {
   if (gameOver) {
     resetGame()
@@ -32,12 +34,14 @@ startButton.addEventListener('click', () => {
   }
 })
 
+// Listen for 'click' events on the 'reset' button
 resetButton.addEventListener('click', () => {
   if (!solutionPlaying) {
     resetGame()
   }
 })
 
+// Reset the game
 function resetGame () {
   banner.innerHTML = 'JS-Simon'
   gameOver = true
@@ -48,6 +52,7 @@ function resetGame () {
   updateScore()
 }
 
+// Animate the individual buttons when clicked
 function playMove (button) {
   button.classList.add('press')
   new Audio(button.dataset.sound).play()
@@ -56,6 +61,7 @@ function playMove (button) {
   }, 300)
 }
 
+// Generate a new move and add it to the solution
 function generateSolution () {
   banner.innerHTML = 'JS-Simon'
   solution.push(Math.floor((Math.random() * 4) + 1))
@@ -63,6 +69,7 @@ function generateSolution () {
   animateSolution()
 }
 
+// Animate the whole solution for the user to see
 function animateSolution () {
   let x = 0
   solutionPlaying = true
@@ -76,6 +83,7 @@ function animateSolution () {
   }, timeout)
 }
 
+// Animate each button on the board
 function flashButtons () {
   theButtons.forEach((button) => {
     button.classList.add('press')
@@ -85,6 +93,7 @@ function flashButtons () {
   })
 }
 
+// Flash the board 3 times
 function introAnimation () {
   let x = 0
   let flash = setInterval(() => {
@@ -96,6 +105,7 @@ function introAnimation () {
   }, 500)
 }
 
+// Check our solution against the game-generated solution
 function checkSolution () {
   let failed = false
   solutionPlaying = true
@@ -107,6 +117,7 @@ function checkSolution () {
         new Audio('sounds/fail.mp3').play()
       }, 700)
       setTimeout(introAnimation, 500)
+      setTimeout(checkHighScore, 3000)
       setTimeout(resetGame, 3000)
     }
   }
@@ -123,6 +134,7 @@ function checkSolution () {
   solutionPlaying = false
 }
 
+// Update the scorebaord text on the page
 function updateScore () {
   if (theScore < 10) {
     score.innerHTML = '0' + theScore
@@ -131,4 +143,17 @@ function updateScore () {
   }
 }
 
+// Check with our database to see if we have a new high score, and if so, write the new data
+function checkHighScore () {
+  if (theScore > topScores[0].score) {
+    console.log('New high score!')
+    let newName = window.prompt('You earned a new high score! Enter your name for the leaderboard:')
+    firebase.database().ref('HighScores/1').set({
+      name: newName,
+      score: theScore
+    })
+  }
+}
+
+// Run the intro animation (flash the board 3 times)
 introAnimation()
