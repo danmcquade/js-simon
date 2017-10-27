@@ -106,34 +106,42 @@ a.btn:active {
   height: 300px;
 }
 .red {
+  border-radius: 300px 0px 0px 0px;
   background: url('images/r-dark.png');
   background-size: contain;
 }
 .red.press {
+  border-radius: 300px 0px 0px 0px;
   background: url('images/r-light.png');
   background-size: contain;
 }
 .green {
+  border-radius: 0px 300px 0px 0px;
   background: url('images/g-dark.png');
   background-size: contain;
 }
 .green.press {
+  border-radius: 0px 300px 0px 0px;
   background: url('images/g-light.png');
   background-size: contain;
 }
 .blue {
+  border-radius: 0px 0px 300px 0px;
   background: url('images/b-dark.png');
   background-size: contain;
 }
 .blue.press {
+  border-radius: 0px 0px 300px 0px;
   background: url('images/b-light.png');
   background-size: contain;
 }
 .yellow {
+  border-radius: 0px 0px 0px 300px;
   background: url('images/y-dark.png');
   background-size: contain;
 }
 .yellow.press {
+  border-radius: 0px 0px 0px 300px;
   background: url('images/y-light.png');
   background-size: contain;
 }
