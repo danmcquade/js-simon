@@ -9,7 +9,7 @@ A web-based version of the classic game Simon in HTML/CSS/JS. Playable version a
 JS-Simon is created using HTML, CSS and vanilla JavaScript. The game utilizes a cloud-based database hosted on Google's Firebase platform to store high scores. Project assets consist of PNG images to draw the game board, and MP3 files for the game sounds.
 
 ## Approach Taken / Features
-The initial approach taken when creating the game was to start simple, and then gradually add features along the way. The first step was to come up with a design for the game board, and to then get the design implemented on the page using HTML and CSS. The next step was to begin putting the building blocks of code in place. The basic features required for the game to function were:
+The initial approach taken when creating the game was to start simple, and then gradually add features along the way. The first step was to come up with a design for the game board, and to then get the design implemented on the page using HTML and CSS. The next step was to begin putting the code into place. The basic features required for the game to function were:
 
 - Having a 'Start' button to begin the game
 - Generating a random solution for the user to follow
@@ -19,7 +19,7 @@ The initial approach taken when creating the game was to start simple, and then 
 - Comparing the buttons pressed to the generated solution
 - Keeping track of the score
 
-With these basics in place, more advanced features could be added to improve the functionality of the game. Some of these advanced features which were implemented later in the development stage include:
+With these basics in place, more advanced features were then added to improve and enhance the functionality of the game. Some of these advanced features which were implemented later in the development process included:
 
 - Adding sounds which play when a button is pressed or a wrong move is made
 - Adding an intro animation to play when the game is loaded
