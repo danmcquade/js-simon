@@ -150,7 +150,6 @@ function updateScore () {
 // Check with our database to see if we have a new high score, and if so, write the new data
 function checkHighScore () {
   if (theScore > topScores[0].score) {
-    console.log('New high score!')
     let newName = window.prompt('You earned a new high score! Enter your name for the leaderboard:')
     firebase.database().ref('HighScores/1').set({
       name: newName,
