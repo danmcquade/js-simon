@@ -26,19 +26,21 @@ document.querySelector('.buttons').addEventListener('click', (e) => {
 })
 
 // Listen for 'click' evnents on our 'start' button
-startButton.addEventListener('click', () => {
+startButton.addEventListener('click', (e) => {
   if (gameOver) {
     resetGame()
     gameOver = false
     generateSolution()
   }
+  e.preventDefault()
 })
 
 // Listen for 'click' events on the 'reset' button
-resetButton.addEventListener('click', () => {
+resetButton.addEventListener('click', (e) => {
   if (!solutionPlaying) {
     resetGame()
   }
+  e.preventDefault()
 })
 
 // Reset the game
