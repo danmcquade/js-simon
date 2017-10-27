@@ -14,17 +14,17 @@ let gameOver = true
 let solutionPlaying = false
 let timeout = 650
 
-document.querySelector('.buttons').addEventListener('click', (x) => {
+document.querySelector('.buttons').addEventListener('click', (e) => {
   if (!solutionPlaying) {
-    playMove(x.target)
+    playMove(e.target)
     if (!gameOver) {
-      mySolution.push(parseInt(x.target.dataset.id))
+      mySolution.push(parseInt(e.target.dataset.id))
       checkSolution()
     }
   }
 })
 
-startButton.addEventListener('click', (x) => {
+startButton.addEventListener('click', () => {
   if (gameOver) {
     resetGame()
     gameOver = false
@@ -59,7 +59,6 @@ function playMove (button) {
 function generateSolution () {
   banner.innerHTML = 'JS-Simon'
   solution.push(Math.floor((Math.random() * 4) + 1))
-  console.log(`Solution is: ${solution}`)
   timeout -= 25
   animateSolution()
 }
@@ -99,6 +98,7 @@ function introAnimation () {
 
 function checkSolution () {
   let failed = false
+  solutionPlaying = true
   for (let z = 0; z < mySolution.length; z++) {
     if (mySolution[z] !== solution[z]) {
       failed = true
@@ -120,6 +120,7 @@ function checkSolution () {
     mySolution = []
     failed = false
   }
+  solutionPlaying = false
 }
 
 function updateScore () {

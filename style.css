@@ -29,7 +29,7 @@ a.btn:active {
 }
 .bannerwrapper {
   width: 100%;
-  height: 75px;
+  height: 60px;
   background: #4554FF;
   color: white;
   display: flex;
@@ -44,8 +44,8 @@ a.btn:active {
   align-items: center;
 }
 .headericon {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   background: url('favicon.png');
   background-size: contain;
   margin-right: 15px;
@@ -54,7 +54,7 @@ a.btn:active {
   width: 100px;
 }
 .controls {
-  margin: 20px;
+  margin: 10px;
   display: flex;
 }
 .buttons {
@@ -76,9 +76,14 @@ a.btn:active {
   font-size: 40px;
   margin: 0 25px;
 }
-.red {
+.red,
+.green,
+.blue,
+.yellow {
   width:300px;
   height: 300px;
+}
+.red {
   background: url('images/r-dark.png');
   background-size: contain;
 }
@@ -87,8 +92,6 @@ a.btn:active {
   background-size: contain;
 }
 .green {
-  width:300px;
-  height: 300px;
   background: url('images/g-dark.png');
   background-size: contain;
 }
@@ -97,8 +100,6 @@ a.btn:active {
   background-size: contain;
 }
 .blue {
-  width:300px;
-  height: 300px;
   background: url('images/b-dark.png');
   background-size: contain;
 }
@@ -107,8 +108,6 @@ a.btn:active {
   background-size: contain;
 }
 .yellow {
-  width:300px;
-  height: 300px;
   background: url('images/y-dark.png');
   background-size: contain;
 }
