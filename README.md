@@ -32,4 +32,4 @@ JS-Simon is a browser-based game. It can be forked and cloned for local playback
 [https://danmcquade.github.io/js-simon/](https://danmcquade.github.io/js-simon/)
 
 ## Known Issues
-Under Safari version 11 (and possibly older versions), Safari's built-in auto-play prevention mechanisms can prevent some of the sound effects from playing while the game is in progress. This can be solved by adding an 'Allow All Auto-Play' exception for the game URL in Safari's Preferences under Websites -> Auto-Play.    
+Under Safari 11.0+ (and possibly older versions), Safari's built-in auto-play prevention mechanisms can prevent some of the sound effects from playing while the game is in progress. This can be solved by adding an 'Allow All Auto-Play' exception for the game URL in Safari's Preferences under Websites -> Auto-Play.    
