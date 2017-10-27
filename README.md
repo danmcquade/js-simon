@@ -24,7 +24,7 @@ With these basics in place, more advanced features were then added to improve an
 - Adding sounds which play when a button is pressed or a wrong move is made
 - Adding an intro animation to play when the game is loaded
 - Speeding up the playback of the solution as the game progresses
-- Implementing a cloud-based database to store the high score(s)
+- Implementing database functionality to store the high score(s)
 
 ## Installation Instructions
 JS-Simon is a browser-based game. It can be forked and cloned for local playback, or it can be played on the web at:
