@@ -16,11 +16,13 @@ let timeout = 650
 
 // Listen for 'click' evnents on our game buttons
 document.querySelector('.buttons').addEventListener('click', (e) => {
-  if (!solutionPlaying) {
-    playMove(e.target)
-    if (!gameOver) {
-      mySolution.push(parseInt(e.target.dataset.id))
-      checkSolution()
+  if (e.target.classList.contains('button')){
+    if (!solutionPlaying) {
+      playMove(e.target)
+      if (!gameOver) {
+        mySolution.push(parseInt(e.target.dataset.id))
+        checkSolution()
+      }
     }
   }
 })
