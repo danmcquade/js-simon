@@ -14,7 +14,7 @@ let gameOver = true
 let solutionPlaying = false
 let timeout = 650
 
-// Listen for 'click' evnents on our game buttons
+// Listen for 'click' evnents on the game buttons
 document.querySelector('.buttons').addEventListener('click', (e) => {
   if (e.target.classList.contains('button')){
     if (!solutionPlaying) {
@@ -27,7 +27,7 @@ document.querySelector('.buttons').addEventListener('click', (e) => {
   }
 })
 
-// Listen for 'click' evnents on our 'start' button
+// Listen for 'click' evnents on the 'start' button
 startButton.addEventListener('click', (e) => {
   if (gameOver) {
     resetGame()
@@ -109,7 +109,7 @@ function introAnimation () {
   }, 500)
 }
 
-// Check our solution against the game-generated solution
+// Check the user's solution against the game-generated solution
 function checkSolution () {
   let failed = false
   solutionPlaying = true
@@ -147,7 +147,7 @@ function updateScore () {
   }
 }
 
-// Check with our database to see if we have a new high score, and if so, write the new data
+// Check with the database to see if there is a new high score, and if so, write the new data
 function checkHighScore () {
   if (theScore > topScores[0].score) {
     let newName = window.prompt('You earned a new high score! Enter your name for the leaderboard:')
