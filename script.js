@@ -29,20 +29,20 @@ document.querySelector('.buttons').addEventListener('click', (e) => {
 
 // Listen for 'click' evnents on the 'start' button
 startButton.addEventListener('click', (e) => {
+  e.preventDefault()
   if (gameOver) {
     resetGame()
     gameOver = false
     generateSolution()
   }
-  e.preventDefault()
 })
 
 // Listen for 'click' events on the 'reset' button
 resetButton.addEventListener('click', (e) => {
+  e.preventDefault()
   if (!solutionPlaying) {
     resetGame()
   }
-  e.preventDefault()
 })
 
 // Reset the game
