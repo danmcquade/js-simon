@@ -176,35 +176,27 @@ a.btn:active {
   }
   .red {
     border-radius: 175px 0px 0px 0px;
-    background-image: url('images/r-dark.png');
   }
   .red.press {
     border-radius: 175px 0px 0px 0px;
-    background-image: url('images/r-light.png');
   }
   .green {
     border-radius: 0px 175px 0px 0px;
-    background-image: url('images/g-dark.png');
   }
   .green.press {
     border-radius: 0px 175px 0px 0px;
-    background-image: url('images/g-light.png');
   }
   .blue {
     border-radius: 0px 0px 175px 0px;
-    background-image: url('images/b-dark.png');
   }
   .blue.press {
     border-radius: 0px 0px 175px 0px;
-    background-image: url('images/b-light.png');
   }
   .yellow {
     border-radius: 0px 0px 0px 175px;
-    background-image: url('images/y-dark.png');
   }
   .yellow.press {
     border-radius: 0px 0px 0px 175px;
-    background-image: url('images/y-light.png');
   }
   .btn {
     font-size: 15px;
