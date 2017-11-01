@@ -30,7 +30,7 @@ a.btn:active {
   color: #FFFFFF;
   border: 1px solid #EEEEEE;
 }
-.bannerwrapper {
+.banner-wrapper {
   width: 100%;
   height: 60px;
   background: #4554FF;
@@ -57,7 +57,7 @@ a.btn:active {
   background-size: contain;
   margin-right: 15px;
 }
-.mainwrapper {
+.main-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -81,6 +81,9 @@ a.btn:active {
 }
 .buttons {
   position: relative;
+}
+.button {
+  background-size: contain;
 }
 .message {
   position: absolute;
@@ -107,52 +110,43 @@ a.btn:active {
 }
 .red {
   border-radius: 300px 0px 0px 0px;
-  background: url('images/r-dark.png');
-  background-size: contain;
+  background-image: url('images/r-dark.png');
 }
 .red.press {
   border-radius: 300px 0px 0px 0px;
-  background: url('images/r-light.png');
-  background-size: contain;
+  background-image: url('images/r-light.png');
 }
 .green {
   border-radius: 0px 300px 0px 0px;
-  background: url('images/g-dark.png');
-  background-size: contain;
+  background-image: url('images/g-dark.png');
 }
 .green.press {
   border-radius: 0px 300px 0px 0px;
-  background: url('images/g-light.png');
-  background-size: contain;
+  background-image: url('images/g-light.png');
 }
 .blue {
   border-radius: 0px 0px 300px 0px;
-  background: url('images/b-dark.png');
-  background-size: contain;
+  background-image: url('images/b-dark.png');
 }
 .blue.press {
   border-radius: 0px 0px 300px 0px;
-  background: url('images/b-light.png');
-  background-size: contain;
+  background-image: url('images/b-light.png');
 }
 .yellow {
   border-radius: 0px 0px 0px 300px;
-  background: url('images/y-dark.png');
-  background-size: contain;
+  background-image: url('images/y-dark.png');
 }
 .yellow.press {
   border-radius: 0px 0px 0px 300px;
-  background: url('images/y-light.png');
-  background-size: contain;
+  background-image: url('images/y-light.png');
 }
-.top {
+.top,
+.bottom {
   display: flex;
   flex-direction: row;
 }
 .bottom {
-  display: flex;
-  flex-direction: row;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .footer {
   display: flex;
