@@ -202,4 +202,24 @@ a.btn:active {
     font-size: 15px;
     padding: 5px 20px;
   }
+  .leaderboard {
+    display: none;
+  }
+  .message {
+    font-size: 15px;
+    width: 75px;
+  }
+  .main-wrapper {
+    margin-top: 0px;
+  }
+  .banner-wrapper{
+    height: 40px;
+  }
+  .headericon {
+    height: 30px;
+    width: 30px;
+  }
+  h3 {
+    font-size: 16px;
+  }
 }
