@@ -166,3 +166,48 @@ a.btn:active {
   font-family: 'HelveticaNeue-UltraLight', 'Helvetica', 'Arial', sans-serif;
   letter-spacing: 1px;
 }
+@media only screen and (max-width : 675px){
+  .red,
+  .green,
+  .blue,
+  .yellow {
+    width:175px;
+    height: 175px;
+  }
+  .red {
+    border-radius: 175px 0px 0px 0px;
+    background-image: url('images/r-dark.png');
+  }
+  .red.press {
+    border-radius: 175px 0px 0px 0px;
+    background-image: url('images/r-light.png');
+  }
+  .green {
+    border-radius: 0px 175px 0px 0px;
+    background-image: url('images/g-dark.png');
+  }
+  .green.press {
+    border-radius: 0px 175px 0px 0px;
+    background-image: url('images/g-light.png');
+  }
+  .blue {
+    border-radius: 0px 0px 175px 0px;
+    background-image: url('images/b-dark.png');
+  }
+  .blue.press {
+    border-radius: 0px 0px 175px 0px;
+    background-image: url('images/b-light.png');
+  }
+  .yellow {
+    border-radius: 0px 0px 0px 175px;
+    background-image: url('images/y-dark.png');
+  }
+  .yellow.press {
+    border-radius: 0px 0px 0px 175px;
+    background-image: url('images/y-light.png');
+  }
+  .btn {
+    font-size: 15px;
+    padding: 5px 20px;
+  }
+}
