@@ -167,6 +167,30 @@ a.btn:active {
   letter-spacing: 1px;
 }
 @media only screen and (max-width : 675px){
+  body {
+    min-height: 100%;
+  }
+  h3 {
+    font-size: 16px;
+  }
+  .message {
+    font-size: 15px;
+    width: 75px;
+  }
+  .main-wrapper {
+    margin-top: 0px;
+  }
+  .banner-wrapper{
+    height: 40px;
+  }
+  .headericon {
+    height: 30px;
+    width: 30px;
+  }
+  .btn {
+    font-size: 15px;
+    padding: 5px 20px;
+  }
   .red,
   .green,
   .blue,
@@ -197,29 +221,5 @@ a.btn:active {
   }
   .yellow.press {
     border-radius: 0px 0px 0px 175px;
-  }
-  .btn {
-    font-size: 15px;
-    padding: 5px 20px;
-  }
-  .leaderboard {
-    display: none;
-  }
-  .message {
-    font-size: 15px;
-    width: 75px;
-  }
-  .main-wrapper {
-    margin-top: 0px;
-  }
-  .banner-wrapper{
-    height: 40px;
-  }
-  .headericon {
-    height: 30px;
-    width: 30px;
-  }
-  h3 {
-    font-size: 16px;
   }
 }
