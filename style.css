@@ -81,6 +81,7 @@ a.btn:active {
 }
 .buttons {
   position: relative;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 .button {
   background-size: contain;
